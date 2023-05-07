@@ -433,11 +433,15 @@
                     </p>
                 </div>
                 <div class="application__form form">
-                    <form class="form__cells" action="https://formspree.io/f/mlekevwg" method="POST">
+                    <form class="form__cells" onsubmit="submitApplicationForm(); return false;">
                         <input type="text" placeholder="Full Name*" class="form__full-name" name="fullname" required>
                         <input type="text" placeholder="Phone number*" class="form__phone-number" name="phonenumber" required>
                         <input type="text" placeholder="E-mail*" class="form__email" name="email" required>
-                        <input type="text" placeholder="Course*" class="form__course" name="course" required>
+                        <div class="form__course">
+                        <label for="course" class="form__course_label">Choose a course:</label>
+                        <select id="course" class="form__course" name="course" required> 
+                        </select>
+                        </div>
                         <input type="submit" class="form__button" value="Send">
                     </form>
                 </div>
@@ -517,7 +521,8 @@
 
     </footer>
 
-
+    <script src="js/application-form.js"></script>
+    <script src="js/courses.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
     <script src="js/header.js "></script>
     <script src="js/courses-carousel.js "></script>

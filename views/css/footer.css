@@ -145,6 +145,7 @@
     font-family: Roboto, sans-serif;
     font-size: 15px;
     margin-top: 12px;
+    color: color(srgb 0.6627 0.6628 0.6628);
 }
 
 .form__button {
