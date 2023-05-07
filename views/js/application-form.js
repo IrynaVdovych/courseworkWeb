@@ -20,7 +20,6 @@
 
 function submitApplicationForm() {
     let form = document.querySelector('.form__cells');
-    console.log('A'+ form);
     let xhr = new XMLHttpRequest();
     let data = new FormData(form);
 
